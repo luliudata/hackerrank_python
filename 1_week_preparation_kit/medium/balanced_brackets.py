@@ -11,7 +11,7 @@
 # -> It contains no unmatched brackets.
 # -> The subset of brackets enclosed within the confines of a matched pair of brackets is
 # also a matched pair of brackets.
-def isBalanced(s: str) -> bool:
+def isBalanced(s: str) -> str:
     # Write your code here
     while len(s) > 0:
         new_str = s
@@ -21,8 +21,8 @@ def isBalanced(s: str) -> bool:
         s = s.replace('()', '')
         s = s.replace('{}', '')
         if new_str == s:
-            return False
-    return True
+            return 'NO'
+    return 'YES'
 
 # print(isBalanced('[([{])]'))
 # s = '[([{])]'
