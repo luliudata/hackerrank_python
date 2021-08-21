@@ -50,3 +50,5 @@ def mergeLists(head1, head2):
     return head
 
 
+# second attempt - Recursive:
+# https://www.geeksforgeeks.org/merge-two-sorted-lists-place/
